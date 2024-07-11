@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web Page Title</title>
+    <!-- Other meta tags, links to stylesheets, or scripts may be present here -->
+    <style>
+      .step iframe {
+        width: 100%; /* Adjust this as needed */
+        height: 80vh; /* Adjust this as needed */
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+  
+      .step iframe img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+        margin-top: 1.6em;
+        margin-bottom: 0.9em;
+      }
+    </style>
+  </head>
+  
+   <style>
+      #scrolly {
+        position: relative;
+        padding: 1rem;
+      }
+
+      .scrolly-overlay {
+        position: relative;
+        padding: 0;
+        max-width: 35rem;
+        margin: 0 auto;
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        z-index: 0;
+        top: 0;
+        height: 100vh;
+        /* Center everything inside */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .step {
+        margin: 0 auto 2rem auto;
+        margin-bottom: 25rem;
+        background-color: #eee;
+        background-color: #fff;
+        color: black;
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.25rem;
+      }
+
+      .hidden { visibility: hidden; }
+
+      /* When it's less than 700 pixels wide, do normal scrollytelling */
+      @media only screen and (min-width: 500px) {
+        #scrolly.side-by-side {
+          display: flex;
+        }
+
+        #scrolly.side-by-side > div {
+          flex-basis: 0;
+          flex-grow: 1;
+          flex-shrink: 1;
+          padding: 0.75em;
+        }
+
+        #scrolly.side-by-side .scrolly-overlay {
+          margin-top: 70vh;
+          order: 0;
+          /* Change these to adjust sizing options */
+          min-width: 15rem;
+          max-width: 20rem;
+        }
+
+        #scrolly.side-by-side .sticky-thing {
+          order: 1;
+          flex-grow: 2;
+        }
+      }
+    </style>
+	<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.0.4/scrollama.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+	
+  </head>
+
+  <body>
+	<h1>Presidential Ties: The influence of a knot</h1>
+      <section id="scrolly">
+        <div class="sticky-thing">
+          <div class="ai2html-container">
+
+<!-- ai2html goes below this line -->
+
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKfRG6flY&#x2F;bfb1EJNr5sLzLEGjJ9rVRA&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKfRG6flY&#x2F;bfb1EJNr5sLzLEGjJ9rVRA&#x2F;view?utm_content=DAGKfRG6flY&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Design</a> by Ainsley Martinez
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKfa2a3Lg&#x2F;RdZ48gkaJcGTAag1BPb5TQ&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKfa2a3Lg&#x2F;RdZ48gkaJcGTAag1BPb5TQ&#x2F;view?utm_content=DAGKfa2a3Lg&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Design</a> by Ainsley Martinez
+<!--  -->
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKfdAd9qk&#x2F;0-c0kFO_iBJ2Qm02b_rrxw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKfdAd9qk&#x2F;0-c0kFO_iBJ2Qm02b_rrxw&#x2F;view?utm_content=DAGKfdAd9qk&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Design</a> by Ainsley Martinez
+<!--  -->
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKfd5TX1M&#x2F;E-cRiVCVHurtK4_fXwtmqw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKfd5TX1M&#x2F;E-cRiVCVHurtK4_fXwtmqw&#x2F;view?utm_content=DAGKfd5TX1M&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Design</a> by Ainsley Martinez
+<!--  -->
+
+<!-- ------->
+<!--  -->
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKfaCAvqY&#x2F;igwBNd16QijK4Mtu3aDyjw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKfaCAvqY&#x2F;igwBNd16QijK4Mtu3aDyjw&#x2F;view?utm_content=DAGKfaCAvqY&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> A 1900 Republican campaign poster for the US presidential election, with portraits of President William McKinley and Vice Presidential candidate Theodore Roosevelt at center. On the left side "Gone Democratic" shows the US in economic slump and Cuba shackled by Spain; on the right side "Gone Republican" shows the US prosperous and Cuba being educated under US tutelage.
+<!-- ------ -->
+<!--  -->
+
+<!--  -->
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKff-5c4w&#x2F;Qh_D4hccS_GhEBr_hJ9hXw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKff-5c4w&#x2F;Qh_D4hccS_GhEBr_hJ9hXw&#x2F;view?utm_content=DAGKff-5c4w&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> Advertisement in Vogue magazine by the Republican National Committee, encouraging women voters to vote the Republican ticket for President, Warren G. Harding and Calvin Coolidge.
+<!-- ---- -->
+<!--  -->
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKfa1rHQk&#x2F;ftLMfouLImgdIHvscEmUog&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKfa1rHQk&#x2F;ftLMfouLImgdIHvscEmUog&#x2F;view?utm_content=DAGKfa1rHQk&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>  President Dwight D. Eisenhower (left) and Vice President Richard Nixon accept their renomination at the 1956 Republican National Convention in San Francisco, California.
+<!-- ---- -->
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKfWMhhhs&#x2F;Y3BRMJBZdLNNmrl1Astotw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKfWMhhhs&#x2F;Y3BRMJBZdLNNmrl1Astotw&#x2F;view?utm_content=DAGKfWMhhhs&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> U.S. Senator John F. Kennedy (standing on left) and U.S. Vice President Richard Nixon (standing on right) participate in the second 1960 presidential debate, held on October 7, 1960 at NBC's studios in Washington, D.C., and moderated by Frank McGee.
+<!--  -->
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKfb4zVzI&#x2F;6JUP7W6k26G99wH_N_GX0Q&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKfb4zVzI&#x2F;6JUP7W6k26G99wH_N_GX0Q&#x2F;view?utm_content=DAGKfb4zVzI&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> Dwight D. Eisenhower, 1959.
+<!--  -->
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKffjy10o&#x2F;wm-lEaF8bn7bAAtUM8xroA&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKffjy10o&#x2F;wm-lEaF8bn7bAAtUM8xroA&#x2F;view?utm_content=DAGKffjy10o&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>U.S. president Jimmy Carter with his wife Rosalynn Carter. 
+<!--  -->
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKffNgN0U&#x2F;DjOzM9lhNk9jOq-gG8E3qw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKffNgN0U&#x2F;DjOzM9lhNk9jOq-gG8E3qw&#x2F;view?utm_content=DAGKffNgN0U&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"> </a> Bar graph displaying how many unsuccessful presidential candidates chose Windsor and Four-in-hand knots, versus successful ones. The majority of successful candidates have worn four knots, while the majority of unsuccessful ones have opted for windsor. 
+<!--  -->
+<!-- ai2html goes above this line -->
+
+          </div>
+        </div>
+
+        <div class="scrolly-overlay">
+          <div class="step" id="step-zero">
+            <p> Can you tell the difference between this knot...</p>
+          </div>
+          <div class="step" id="step-one">
+            <p>...and this knot?</p>
+          </div>
+          <div class="step" id="step-two">
+            <p>Four-in-Hand and Windsor knots have become popular players in presidential debates: worn by almost all candidates as a symbol of professionalism and power.</p>
+          </div>
+          <div class="step" id="step-three">
+            <p>Theodore Roosevelt was the first candidate to wear a tie, a four-in-hand knot, in the 1900 election.</p></p>
+            </div>
+            <div class="step" id="step-four">
+                <p>Then, in 1920, it seemed like everyone was wearing ties, following in President Roosevelt's direction with four-in-hand knots.</p>
+              </div>
+              <div class="step" id="step-five">
+                <p> Republican candidates like President Eisenhower and Nixon opted for larger knots. </p>
+              </div>
+              <div class="step" id="step-six">
+                <p> While some Democratic candidates like President Kennedy chose a smaller knot. </p>
+              </div>
+              <div class="step" id="step-seven">
+                <p> However, President Eisenhower was the first successful candidate to sport a Windsor knot. </p></p>
+                </div>
+                <div class="step" id="step-eight">
+                    <p> President Jimmy Carter wore a four-in-one hand knot, but opted for earth-toned colors: different from his peers. Almost all other Presidents wore dark colors, or bright reds and blues. </p>
+                  </div>
+                  <div class="step" id="step-nine">
+                    <p> Almost all successful candidates have worn four-in-one knots, while many unsuccessful ones have opted for windsors. </p>
+                  </div>
+                  <div class="step" id="step-ten">
+                    <p> Only one Democratic successful candidate, Bill Clinton, wore a windsor knot. </p>
+                  </div>
+                  <div class="step" id="step-eleven">
+                    <p> What tie would you choose? </p></p>
+                    </div>
+      </section>
+
+    <script>
+      
+      /* Scrollytelling code goes under here */
+
+
+
+    </script>
+
+<script>
+    const scroller = scrollama();
+
+	scroller
+		.setup({
+			step: "#scrolly .scrolly-overlay .step",
+			offset: 0.75,
+			debug: false
+		})
+		.onStepEnter(function({ element, index, direction}) {
+			const event = new CustomEvent('stepin', { detail: { direction: direction } })
+			element.dispatchEvent(event);
+		})
+		.onStepExit(function({ element, index, direction }) {
+			const event = new CustomEvent('stepout', { detail: { direction: direction } })
+			element.dispatchEvent(event);
+		});
+
+	window.addEventListener("resize", scroller.resize);
+    </script>
+
+
+    <!-- ai2html resizer script -->
+
+<script type="text/javascript">
+  (function() {
+      // only want one resizer on the page
+      if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
+      document.documentElement.className += " g-resizer-v3-init";
+      // require IE9+
+      if (!("querySelector" in document)) return;
+      function resizer() {
+          var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+              widthById = {};
+          elements.forEach(function(el) {
+              var parent = el.parentNode,
+                  width = widthById[parent.id] || parent.getBoundingClientRect().width,
+                  minwidth = el.getAttribute("data-min-width"),
+                  maxwidth = el.getAttribute("data-max-width");
+              widthById[parent.id] = width;
+
+              if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                  el.style.display = "block";
+              } else {
+                  el.style.display = "none";
+              }
+          });
+          try {
+              if (window.parent && window.parent.$) {
+                  window.parent.$("body").trigger("resizedcontent", [window]);
+              }
+              if (window.require) {
+                  require(['foundation/main'], function() {
+                      require(['shared/interactive/instances/app-communicator'], function(AppCommunicator) {
+                          AppCommunicator.triggerResize();
+                      });
+                  });
+              }
+          } catch(e) { console.log(e); }
+      }
+
+      document.addEventListener('DOMContentLoaded', resizer);
+      // feel free to replace throttle with _.throttle, if available
+      window.addEventListener('resize', throttle(resizer, 200));        
+
+      function throttle(func, wait) {
+          // from underscore.js
+          var _now = Date.now || function() { return new Date().getTime(); },
+              context, args, result, timeout = null, previous = 0;
+          var later = function() {
+              previous = _now();
+              timeout = null;
+              result = func.apply(context, args);
+              if (!timeout) context = args = null;
+          };
+          return function() {
+              var now = _now(), remaining = wait - (now - previous);
+              context = this;
+              args = arguments;
+              if (remaining <= 0 || remaining > wait) {
+                  if (timeout) {
+                      clearTimeout(timeout);
+                      timeout = null;
+                  }
+                  previous = now;
+                  result = func.apply(context, args);
+                  if (!timeout) context = args = null;
+              } else if (!timeout && options.trailing !== false) {
+                  timeout = setTimeout(later, remaining);
+              }
+              return result;
+          };
+      }
+
+     
+  })();
+</script>
+
+  </body>
+</html>

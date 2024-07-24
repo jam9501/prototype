@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tie {
+    width: 80px;
+    height: 120px;
+    border-radius: 4px;
+    cursor: pointer;
+    visibility: visible !important; /* Ensure ties are visible */
+    display: inline-block; /* Example: Ensure ties are displayed inline-block */
+        /* Other styles specific to tie elements */
+    }
+    
+}
+
+.tie img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.tooltip {
+    position: fixed;
+    max-width: 300px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    visibility: shown;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+    z-index: 999;
+}
+
+.tooltip.active {
+    visibility: visible;
+    opacity: 1;
+}
